@@ -5,17 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amazon scraper</title>
-  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
   <header>
     <div id="search-header">
-      <input id="search-bar" type="text" placeholder="Search products">
-      <button id="search-btn" type="button">Search</button>
+      <form id="search-form">
+        <input id="search-bar" type="text" placeholder="Search products">
+        <button id="search-btn" type="submit">Search</button>
+      </form>
     </div>
   </header>
+  <div id="alert" class="hide">Type a product to search!</div>
+  <main>
+    <div id="products"></div>
+  </main>
+  
 
   <script type="module" src="/src/main.js"></script>
 </body>
